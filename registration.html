@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Transparent Registration Form with Form Validation</title>
+<link rel="stylesheet" href="trans.css">
+</head>
+<body>
+<div class="reg-box">
+
+<h1>REGISTER</h1>
+<form>
+	<div class="input-field">
+		<input type="email" required onkeyup="this.setAttribute('value', this.value);" value="">
+		<label>Enter Your Mail</label>
+	</div>
+	<div class="input-field">
+		<input type="text" required onkeyup="this.setAttribute('value', this.value);"value="">
+		<label>Enter Your Username</label>
+	</div>
+	<div class="input-field">
+		<input type="password" required value=""
+		onkeyup="this.setAttribute('value', this.value);"
+		pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+		title="Must Contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters">
+		<label>Set Your Password</label>
+	</div>
+	<center><input type="submit" name="reg" value="REGISTER"></center>
+</form>
+</div>
+
+</body>
+</html>
